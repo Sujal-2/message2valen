@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>My Website</title>
+            <link rel="stylesheet" href="index.css"> 
+        </head>
+    </head>
+    <body>
+        <DIV>
+            <h1><B>WILL YOU BE MY VALENTINE??💖</B></h1>
+            <img class="image" src="cute-kawaii-white-cat-with-roses-flowers-be-my-valentine-pet-animal-cartoon-character-hand-drawing-illustration-vector.jpg">
+        <DIV class="button-container"></DIV>    
+            <button id="yesButton"> YES </button>
+            <button id="no"> NO </button>
+        </DIV>
+    </body>
+    <script>
+        document.getElementById("yesButton").addEventListener("click",showAlert);
+        function showAlert(){
+            alert("I LOVE YOU!!! 💖 Every moment without you feels incomplete, but knowing we'll be together soon fills my heart with endless joy. Can't wait to see your smile and hold you close! YOU ARE MY EVERYTHING! 💘💫")
+
+        }
+        var no= document.getElementById("no");
+        no.addEventListener("click",change);
+        function change(){
+            var i= Math.floor(Math.random()*1000)+1;
+            var j= Math.floor(Math.random()*700)+1;
+            no.style.left= i+"px";
+        }
+    </script>     
+</html>

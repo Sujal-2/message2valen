@@ -1,0 +1,63 @@
+body {
+    background-color: #ffe6f2; /* Soft pink background */
+    font-family: "Comic Sans MS", cursive, sans-serif; /* Cute font */
+}
+h1 {
+    font-size: 45px;
+    color: #d557ff; /* Deep pink */
+    text-shadow: 2px 2px 5px rgba(255, 105, 180, 0.5);
+}
+div{
+    text-align: center;
+    vertical-align: middle;
+}
+#no{position: absolute;}
+
+.image {
+    align-items: middle;
+    width: 500px;  
+    height: auto;  
+    margin: 0 auto;
+    display: block;
+    border: 5px solid pink;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(255, 20, 147, 0.5);
+}
+.button-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+#no {
+    position: absolute;
+}   
+button {
+    font-size: 22px;
+    padding: 15px 30px;
+    border-radius: 50px; /* Cute round buttons */
+    border: none;
+    background-color: #ff69b4; /* Cute pink */
+    color: white;
+    font-weight: bold;
+    align-content: center;
+}
+button:hover {
+    transform: scale(1.1); /* Button gets bigger on hover */
+    box-shadow: 0px 4px 10px rgba(255, 20, 147, 0.5);
+}
+#no {
+    position: absolute;
+    background-color: #ffccd5; /* Light pink */
+    color: #ff1493; /* Dark pink text */
+}
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+h1, .image {
+    animation: floating 2s infinite ease-in-out;
+}
+
